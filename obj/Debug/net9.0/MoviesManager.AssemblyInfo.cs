@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoviesManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3faff7a9d123b5d6a621119a7b634bb4d837e8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoviesManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoviesManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
