@@ -1,0 +1,35 @@
+@model List<MoviesManager.Models.Movie>
+@{
+    ViewData["Title"] = "Browse the Catalog";
+}
+<h2>@ViewData["Title"]</h2>
+
+
+<table class="table table-hover table-bordered" style="margin: 0.9rem 0;">
+    <tr>
+        <th>Title</th>
+        <th>Director</th>
+        <th>Genre</th>
+        <th>Year</th>
+        <th>Rating</th>
+        <th>Cast</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var m in Model)
+    {
+        <tr>
+            <td>@m.Title</td>
+            <td>@m.Director</td>
+            <td>@m.Genre</td>
+            <td>@m.Year</td>
+            <td>@m.Rating</td>
+            <td>@m.Cast</td>
+            <td>
+                <a href="/Movies/Details/@m.Id">View</a> |
+                <a href="/Movies/Edit/@m.Id">Edit</a> |
+                <a href="/Movies/Delete/@m.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+<a href="/Movies/Create" class="btn btn-primary">Add New Movie</a>

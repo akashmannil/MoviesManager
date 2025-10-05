@@ -1,0 +1,28 @@
+@model MoviesManager.Models.Movie
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<h2>@ViewData["Title"] - @Model.Title</h2>
+<div style="width:80vw; margin-top: 2rem; margin-bottom: 1rem;">
+    <div class="card" style="max-width:400px; margin:auto;">
+        <div class="card-body" style="padding:2rem;">
+            <h4 class="card-title text-center">@Model.Title (⭐@Model.Rating)</h4>
+            <hr>
+            <p class="card-text" style="margin-top:1rem;"><strong>Director:</strong> @Model.Director</p>
+            <p class="card-text"><strong>Genre:</strong> @Model.Genre</p>
+            <p class="card-text"><strong>Year:</strong> @Model.Year</p>
+            <p class="card-text"><strong>Rating:</strong> @Model.Rating</p>
+            <p class="card-text"><strong>Cast:</strong> @Model.Cast</p>
+        </div>
+    </div>
+</div>
+
+<br />
+<div style="width:80vw;" class="text-center">
+    <div style="margin:auto; width:300px;">
+        <a href="/Movies/Edit/@Model.Id" class="btn btn-primary">Edit</a>
+        <a href="/Movies/Delete/@Model.Id" class="btn btn-danger">Delete</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

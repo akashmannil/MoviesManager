@@ -1,0 +1,30 @@
+﻿@* Already Bootstrap included in project, So we're utilizing that to style the pages *@
+@{
+    ViewData["Title"] = "Home";
+}
+<div class="text-center">
+    <h1 class="display-4">🎬 Movie Manager 2025</h1>
+    <p style="font-size: 0.8rem; margin-bottom: -0.25rem; margin-top:1rem; font-weight: 300;">
+        A beginner ASP.NET MVC project aimed to build a project that helps to
+    <div style="font-size: 1.25rem;">
+        Organize,
+        track, and manage the movies data - all in one place.
+    </div>
+    </p>
+    <hr />
+    <p style="font-size: x-large;">
+        Our Features:
+    </p>
+    <ul class="text-start" style="max-width: 671px; margin: auto;">
+        <li><strong>Add & Organize:</strong> Easily add new movies to your collection, complete with their genre and release year</li>
+        <li><strong>Update Anytime:</strong> Keep your list current by editing and updating movie details whenever you need to.</li>
+        <li><strong>View Details:</strong> Get detailed information for every movie with a single click.</li>
+        <li><strong>Quick Removal:</strong> Remove movies from your list effortlessly when you're done with them.</li>
+    </ul>
+    <p class="mt-4">
+        @* Moving to Movies component -> Movies/index*@
+        <a asp-controller="Movies" asp-action="Index" class="btn btn-primary btn-lg">
+            View all movies
+        </a>
+    </p>
+</div>
